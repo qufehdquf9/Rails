@@ -41,4 +41,11 @@ class HomeController < ApplicationController
     
     redirect_to '/'
   end
+  
+  def comment_destroy
+    comment = Post.find(params[:p_id]).comments.find(params[:c_id])
+    comment.destroy
+
+    redirect_to '/'
+  end
 end

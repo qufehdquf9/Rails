@@ -4,7 +4,7 @@
     제목:<%=x.title%><br>
     내용:<%=x.content%><br>
     <a href ="/home/delete/<%=x.id%>">[삭제]</a>
-    <a href = "/home/edit/<%=x.id%>">[수정]</a></br>
+    <a href = "/home/edit/<%=x.id%>">[수정]</a></br><br>
     <form action ='/<%=x.id%>/comment_create' method ="post">
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         댓글:<input type="text" name="content">
@@ -12,6 +12,7 @@
     </form>
     <%x.comments.each do |c| %>
         댓글:<%= c.content%>
+        <a href = '/<%=x.id%>/comment_destroy/<%=c.id%>'>삭제</a>
         <br>
     <%end%>
     <hr>
