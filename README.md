@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###멋쟁이 사자처럼 강의
 
-Things you may want to cover:
+mvc 패턴과 rails 를 이용한 게시판 crud 및 댓글 구현
 
-* Ruby version
+게시판:댓글 == 1:m 관계구현
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
